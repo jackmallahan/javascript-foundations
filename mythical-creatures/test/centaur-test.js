@@ -3,11 +3,11 @@ var Centaur = require('../exercises/centaur');
 
 describe('Centaur', function () {
 
-  it.skip('should be a function', function () {
+  it('should be a function', function () {
     assert.isFunction(Centaur);
   });
 
-  it.skip('should have a name', function () {
+  it('should have a name', function () {
     var centaur = new Centaur('George');
     assert.equal(centaur.name, 'George');
   });

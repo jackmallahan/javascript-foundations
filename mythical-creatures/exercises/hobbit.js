@@ -20,12 +20,4 @@ Hobbit.prototype.celebrateBirthday = function(){
 }
 
 
-// Hobbit.prototype.adult = function(){
-//   timeTravel(age, hobbit);
-//   this.age = age;
-//   if (this.age < 33){
-//     return false;
-//   } else {return true}
-// }
-
 module.exports = Hobbit

@@ -18,7 +18,7 @@ Wizard.prototype.cast = function(){
   if (counter < 3){
   return 'MAGIC BULLET';
 } else { return 'I SHALL NOT CAST!'
-}  
+}
 }
 
 

@@ -1,24 +1,20 @@
 function Pirate(name, job){
   this.name = name;
-  this.job = job;
-  if (this.job === undefined){
-    this.job = 'Scallywag'
-  }else {this.job = job}
+  this.job = job || 'Scallywag';
   this.cursed = false;
-  counter = 0
   this.booty = 0;
 }
 
-Pirate.prototype.commitHeinousAct = function(){
-  counter++;
-    if (counter >= 3){
-      this.cursed = true
-    } else {this.cursed = false}
-  }
+var counter = 0
+Pirate.prototype.commitHeinousAct = function () {
+  counter++
+  if (counter < 3){
+    this.cursed = false
+  } else {this.cursed = true}
+};
 
 Pirate.prototype.robShip = function(){
   this.booty = 100;
-  return 'YAARRR!';
+  return 'YAARRR!'
 }
-
 module.exports = Pirate
